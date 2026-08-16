@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Integral CF";
+    src: url('../../assets/fonts/Fontspring-heavy.otf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: "satoshi";
+    src: url('../../assets/fonts/Satoshi-Regular.otf');
+}
