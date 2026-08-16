@@ -9,7 +9,7 @@ import fifthLogo from '../../assets/images/Group (1).png'
 
 function Trusted() {
   return (
-    <div className='w-full h-[90px] bg-black mb-3 flex justify-center items-center '>
+    <div className='w-full h-[90px] bg-black  flex justify-center items-center '>
         <div className='max-w-[1200px] w-full h-full  flex gap-3'>
             <div className='w-[250px] h-full  flex justify-center items-center'>
                 <img src={firstLogo} alt="versace Img" />
