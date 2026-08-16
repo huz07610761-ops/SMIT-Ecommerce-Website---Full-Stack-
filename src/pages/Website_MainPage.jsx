@@ -4,6 +4,7 @@ import Navbar from '../components/navbar/Navbar'
 import HeroSection from '../components/heroSection/HeroSection'
 import Trusted from '../components/trusted_Company/Trusted'
 import NewArrivals from '../components/new arrivals/NewArrivals'
+import Top_Selling_Product from '../components/top salling/Top_Selling_Product'
 
 function Website_MainPage() {
   return (
@@ -13,6 +14,7 @@ function Website_MainPage() {
       <HeroSection/>
       <Trusted/>    
       <NewArrivals/>
+      <Top_Selling_Product/>
     </div>
   )
 }
