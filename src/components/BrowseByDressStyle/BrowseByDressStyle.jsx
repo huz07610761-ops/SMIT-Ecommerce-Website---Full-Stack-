@@ -8,11 +8,11 @@ import { categories } from '../../utils/data'
 
 function BrowseByDressStyle() {
   return (
-    <div className="w-full max-w-[1200px] h-auto mb-5 mt-[70px] border mx-auto rounded-3xl  bg-[#F0F0F0]">
-        <div className='w-full h-[90px] border mt-5 text-center items-center flex justify-center text-[33px]'>
+    <div className="w-full max-w-[1200px] h-auto mb-5 mt-[70px]  mx-auto rounded-3xl  bg-[#F0F0F0]">
+        <div className='w-full h-[90px]  mt-5 text-center items-center flex justify-center text-[33px]'>
             <h3 className='font-[Integral_CF]'>Browse By Dress style</h3>
         </div>
-        <div className='w-full max-w-[1200px] border mx-auto py-2 px-3 h-auto'>
+        <div className='w-full max-w-[1200px]  mx-auto py-2 px-3 h-auto'>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         
         {/* ROW 1 */}
