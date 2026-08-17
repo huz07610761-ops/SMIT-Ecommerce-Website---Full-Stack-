@@ -112,3 +112,26 @@ export const Product = [
         img: firstImage
     }
 ];
+
+export const categories = [
+    {
+      title: "Casual",
+      image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop", // Replace with your image URL
+      className: "col-span-1 md:col-span-4",
+    },
+    {
+      title: "Formal",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop", // Replace with your image URL
+      className: "col-span-1 md:col-span-8",
+    },
+    {
+      title: "Party",
+      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop", // Replace with your image URL
+      className: "col-span-1 md:col-span-8",
+    },
+    {
+      title: "Gym",
+      image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop", // Replace with your image URL
+      className: "col-span-1 md:col-span-4",
+    },
+  ]
