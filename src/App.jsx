@@ -3,12 +3,17 @@ import AnoucementBar from './components/annoucement bar/AnoucementBar'
 import Navbar from './components/navbar/Navbar'
 import HeroSection from './components/heroSection/HeroSection'
 import Website_MainPage from './pages/Website_MainPage'
+import Website_Category_Page from './pages/Website_Category_Page'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-        <Website_MainPage/>
-    </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Website_MainPage/>} />
+        <Route path='/category' element={<Website_Category_Page/>} />
+      </Routes>
+      </BrowserRouter>
   )
 }
 
