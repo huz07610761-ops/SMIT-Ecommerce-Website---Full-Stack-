@@ -2,8 +2,16 @@ import React from 'react'
 import Card from '../Card/Card'
 import Button from '../button/Button'
 import { Product } from '../../utils/data'
+import { useNavigate } from 'react-router-dom'
 
 function NewArrivals() {
+
+  const navigate = useNavigate()
+
+  function handleDynamicRoute(id){
+    navigate(`/productDetails/${id}`)
+  }
+
   return (
     <div className='w-full h-auto md:h-[550px] mb-5 mt-10 pt-6 px-4 md:px-0'>
       
@@ -17,8 +25,8 @@ function NewArrivals() {
       {/* Products Section */}
       <div className='w-full max-w-[1200px] h-auto py-3 px-1 mx-auto mt-2 flex overflow-x-auto md:overflow-visible md:flex-wrap justify-start md:justify-center items-center gap-4 sm:gap-6 md:gap-9 scrollbar-none snap-x snap-mandatory'>
         {Product.slice(0, 4).map((data, index) => (
-          <div key={index} className='snap-start flex-shrink-0 md:flex-shrink'>
-            <Card data={data} />
+          <div key={index} onClick={()=>handleDynamicRoute(data.id)} className='snap-start flex-shrink-0 md:flex-shrink cursor-pointer'>
+            <Card data={data} onClick={handleDynamicRoute} />
           </div>
         ))}
       </div>
