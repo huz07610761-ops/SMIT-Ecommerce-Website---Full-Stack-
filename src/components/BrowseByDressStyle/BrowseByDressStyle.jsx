@@ -4,6 +4,7 @@ import formalImage from '../../assets/images/image 13.png'
 import partyImage from '../../assets/images/image 12.png'
 import gymImage from '../../assets/images/image 14.png'
 import { categories } from '../../utils/data'
+import { Link } from 'react-router-dom'
 
 
 function BrowseByDressStyle() {
@@ -17,6 +18,7 @@ function BrowseByDressStyle() {
         
         {/* ROW 1 */}
         {/* Card 1 (1 Column space - 33%) */}
+        <Link to='/category'>
         <div className="md:col-span-1 relative h-64 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition">
           <h3 className="absolute top-6 left-6 text-2xl font-bold text-black z-10">
             Casual
@@ -27,7 +29,7 @@ function BrowseByDressStyle() {
             className="w-full h-full object-cover"
           />
         </div>
-
+        </Link>
         {/* Card 2 (2 Columns space - 66%) */}
         <div className="md:col-span-2 relative h-64 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition">
           <h3 className="absolute top-6 left-6 text-2xl font-bold text-black z-10">
